@@ -1,0 +1,28 @@
+.component.-video-container {
+  margin: 0 auto;
+
+  .box {
+    position: relative;
+    z-index: 1;
+    width: 640px;
+    height: 480px;
+  }
+
+  .options {
+    margin-left: 80px;
+  }
+
+  .canvas {
+    position: absolute;
+    z-index: 1;
+    //width: 100%;
+    //height: 100%;
+  }
+
+  .webcam {
+    position: absolute;
+    z-index: 0;
+    //width: 100%;
+    //height: 100%;
+  }
+}
