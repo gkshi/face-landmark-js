@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router5'
+// import { Link } from 'react-router5'
 
 import './_index.scss'
 
@@ -10,9 +10,9 @@ function HeaderComponent () {
         <div>
           <a href="https://github.com/gkshi" target="_blank" rel="noreferrer">GitHub</a>
         </div>
-        <div>
-          <Link routeName="about">about</Link>
-        </div>
+        {/* <div> */}
+        {/*  <Link routeName="about">about</Link> */}
+        {/* </div> */}
       </nav>
     </div>
   )

@@ -1,0 +1,70 @@
+@import "../../../assets/scss/variables";
+@import "../../../assets/scss/extends";
+
+.input.-component {
+  position: relative;
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+    color: $color-text-faded;
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  input {
+    @extend %ui-field;
+    //box-shadow: $box-shadow-default;
+
+    &:focus {
+      //border-color: $color-border;
+      //box-shadow: $box-shadow-default-highlight;
+    }
+  }
+
+  .buttons {
+    position: absolute;
+    top: 12px;
+    right: 22px;
+    z-index: 1;
+  }
+
+  .icon-container.-error {
+    color: $color-danger;
+    cursor: none;
+  }
+
+  &.-theme {
+    &-default {}
+
+    &-clean {
+      input {
+        padding: 0;
+        box-shadow: none;
+        background: transparent;
+        border: none;
+        border-radius: 0;
+      }
+    }
+
+    &-dark {
+      input {
+        background: $color-dark;
+        box-shadow: none;
+      }
+    }
+  }
+
+  &.-no-box-shadow {
+    input {
+      box-shadow: none;
+    }
+  }
+
+  &.-disabled,
+  &.-readonly {
+    .icon-error {
+      cursor: default;
+    }
+  }
+}
